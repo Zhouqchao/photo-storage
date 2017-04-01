@@ -20,9 +20,9 @@ a simple photo storage application by Express, multer,ejs and mongoose.
     
 ### 首页  
 
-  <div align="center"><img src="https://github.com/Zhouqchao/photo-storage/blob/master/index.png" title="index"></div>  
+<div align="center"><img src="https://github.com/Zhouqchao/photo-storage/blob/master/index.png" title="index"></div>  
     
 ### 图片上传页  
 
-  <div align="center"><img src="https://github.com/Zhouqchao/photo-storage/blob/master/upload.png" title="index"></div>
+<div align="center"><img src="https://github.com/Zhouqchao/photo-storage/blob/master/upload.png" title="upload"></div>
  
