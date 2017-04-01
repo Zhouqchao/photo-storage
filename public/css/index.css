@@ -1,0 +1,33 @@
+body{
+    padding: 50px;
+    font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+a{
+    color:#00B7FF;
+    text-decoration: none;
+}
+.photo{
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    border:1px solid #eee;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px #ddd;
+}
+.photo h2{
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 200;
+    border-bottom: 1px solid #ccc;
+}
+.photo img{
+    height: 100px;
+}
+.photo div{
+    margin-top: 5px;
+    text-align: center;
+}
+.photo .download{
+    padding: 5px;
+}

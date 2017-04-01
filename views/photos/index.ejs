@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <h1><%= title %></h1>
+    <p>Express stock photo application <a href="/upload">upload</a></p>
+    <div id="photos">
+    <!-- 遍历数据库中保存的所有图片数据 -->
+        <% photos.forEach(function(photo){%>
+            <div class="photo">
+                <h2><%= photo.name %></h2>
+                <a href="/photo/<%= photo.id %>/view">
+                    <img src="photos/<%= photo.path %>" title="<%=photo.name %>">
+                </a>
+                <div><a href="/photo/<%= photo.id %>/download" class="download">Download</a></div>
+            </div>
+        <%}) %>
+    </div>
+</body>
+</html>
