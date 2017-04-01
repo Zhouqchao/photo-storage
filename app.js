@@ -34,7 +34,7 @@ app.set('port', process.env.PORT || 3000);
 app.use(express.static(path.join(__dirname, 'public')));
 
 //设置模版
-app.set('views', __dirname +'/views');
+app.set('views', path.join(__dirname,'views'));
 app.set('view engine', 'ejs');
 
 app.set('photos', path.join(__dirname, 'public','photos'));
@@ -48,7 +48,7 @@ app.get('/', photos.list);
 //图片上传页
 app.get('/upload', photos.form);
 //响应图片上传
-app.post('/upload', upload.single('picture'), photos.submit(app.get('photos')));
+app.post('/upload', upload.single('file'), photos.submit(app.get('photos')));
 //单张图片查看
 app.get('/photo/:id/view',photos.view(app.get('photos')));
 //图片下载

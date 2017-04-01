@@ -8,7 +8,7 @@ exports.list = function(req,res){
         if(err){
             return next(err);
         }
-        res.render('photos/index',{
+        res.render('index',{
             title: 'Photos Storage',
             photos: photos
         });
@@ -17,7 +17,7 @@ exports.list = function(req,res){
 
 //GET '/upload' 图片上传页
 exports.form = function(req,res){
-    res.render('photos/upload',{
+    res.render('upload',{
         title: 'Photo Upload'
     });
 };
